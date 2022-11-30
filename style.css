@@ -2,7 +2,9 @@ body {
     background-color: antiquewhite;
     color: white;
     background-image: url(thumb_1_servidoriniciante.png);
+    background-image: image-set(absolute);
     background-size:cover;
+    background-attachment: fixed;
     
 }
 
@@ -19,6 +21,7 @@ section {
     width: 600px;
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
     
 }
 

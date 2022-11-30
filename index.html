@@ -20,11 +20,14 @@
     <section>
         <div class="div">
             <p>Name</p>
-            <input type="text" name="nome" id="nome" placeholder="Enter your name" minlength="10">
+            <input type="text" name="nome" id="nome" placeholder="Enter your name" minlength="8" maxlength="16">
+    
             <p>Email</p>
             <input type="email" name="email" id="email" placeholder="Enter your Email">
+            
             <p>Age(Optional)</p>
-            <input type="number" name="idade" id="idade" placeholder="Enter your age" min="18">
+            <input type="number" name="idade" id="idade" placeholder="Enter your age" min="18" max="100">
+            
             <p>Which option best describes your current role ?</p>
             <input type="text" name="ocupação" id="ocupação" list="ocup" placeholder="Select your current role">
             <datalist id="ocup">
@@ -34,6 +37,7 @@
                 <option value="Prefer not to say"></option>
                 <option value="Other"></option>
             </datalist>
+            
             <p>Would you recomend freeCodeCamp to a friend ?</p>
             <input type="radio" name="rad" id="def">
             <label for="def">Definitely</label>
@@ -41,6 +45,7 @@
             <label for="may">Maybe</label>
             <input type="radio" name="rad" id="not">
             <label for="not">Not Sure</label>
+            
             <p>What is your favorite feature of freeCodeCamp?</p>
             <input type="text" name="função" id="função" placeholder="Select your favorite feature" list="func">
             <datalist id="func">
@@ -49,10 +54,11 @@
                 <option value="Community"></option>
                 <option value="Open Source"></option>
             </datalist>
+           
             <div class="opções">
             <p>What would you like to see improved? (Check all that apply)</p>
                 <div class="primeiro">
-                    <div><input type="checkbox" name="front" id="front"><label for="front">Front-end Projects</label></div>
+                    <div><input type="checkbox" name="front" id="front" max = "5"><label for="front">Front-end Projects</label></div>
                     <div><input type="checkbox" name="back" id="back"><label for="back">Back-end Projects</label></div>
                     <div><input type="checkbox" name="data" id="data"><label for="data">Data Visualization</label></div>
                     <div><input type="checkbox" name="chall" id="chall"><label for="chall">Challenges</label></div>
@@ -79,14 +85,12 @@
             </div>
 
             <div class="divbotão">
-                <input class="botão" type="button" value="Submit" onclick="clicar()">
+                <input id="botão" class="botão" type="button" value="Submit" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
             </div>
             
         </div>
     </section>
 
-    <footer>
-        &copy;VmS
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
